@@ -67,6 +67,10 @@ header a {
     grid-column-gap: 15px;
     grid-row-gap: 15px;
 }
+.parent2 div div {
+    display: flex;
+    align-items: center;
+}
 .stories .h2 {
     display: flex;
     align-items: center;
