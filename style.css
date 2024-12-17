@@ -11,7 +11,12 @@ header {
     align-items: center;
     padding: 10px 50px ;
 }
-
+.display{
+    display: none;
+}
+.topnav{
+    display: none;
+}
 header a {
     text-decoration: none;
     color: black;
@@ -143,6 +148,15 @@ header a {
     
 
 @media screen and (max-width: 950px) {
+    #mylinks{
+        display: none;
+    }
+    .topnav{
+        display: block;
+    }
+    .display{
+        display: block;
+    }
     .search-bar {
         position: relative;
         top: 12vh;
