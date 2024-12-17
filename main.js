@@ -5,6 +5,4 @@ function myFunction() {
     } else {
       x.style.display = "block";
     }
-    console.log("k")
-    document.querySelector('header').style.height = "auto";
   }

@@ -148,19 +148,24 @@ header a {
     
 
 @media screen and (max-width: 950px) {
-    #mylinks{
-        display: none;
-    }
     .topnav{
         display: block;
+        margin-left: 20vw;
     }
+    #myLinks {
+        display: none;
+    }
+    header a {
+        color: #f9f9f9;
+    }
+
     .display{
         display: block;
     }
     .search-bar {
         position: relative;
-        top: 12vh;
-        left: -20vw;
+        top: 20vh;
+        left: -50vw;
     }
     .search-bar input {
         width: 120px;
@@ -168,8 +173,8 @@ header a {
     }
     header button{
         position: relative;
-        top: 12vh;
-        left: 7vw;
+        top: 20vh;
+        left: -20vw;
         background-color: #f9f9f9;
     }
     #mongol{
@@ -183,9 +188,10 @@ header a {
     .parent{
         display: flex;
         flex-direction: column;
+        margin-top: 20vh;
     
     }
-    header a {
+    .none {
         display: none;
     }
     header {    
@@ -203,9 +209,6 @@ header a {
         display: flex;
         flex-direction: column;
 
-    }
-    .parent{
-        margin-top: 12vh;
     }
     }
 
