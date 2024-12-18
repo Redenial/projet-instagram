@@ -29,7 +29,7 @@ button.onclick = function () {
   let currentIndex = 0;
 
 const images = document.querySelectorAll('.carrousel img');
-const totalImages = images.length -3;
+const totalImages = images.length -4;
 
 function changeImage(direction){
     currentIndex += direction
@@ -39,6 +39,6 @@ function changeImage(direction){
         currentIndex = 0;
 
     }
-    const offset = -currentIndex* 60 ;
+    const offset = -currentIndex* 30 ;
     document.querySelector('.carrousel').style.transform = `translateX(${offset}vw)`;
 }

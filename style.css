@@ -47,6 +47,7 @@ header a {
     border-radius: 50%;
     padding: 15px 15px;
 }
+
 .parent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -164,9 +165,21 @@ header a {
         cursor: pointer;
         z-index: -1;
     }
+    .prev, .next{
+        display: none;
+    }
     
 
 @media screen and (max-width: 950px) {
+    .prev, .next{
+        display: block;
+        border-radius: 12px;
+        width: 35px;
+        z-index: 2;
+    }
+    .carrousel-container{
+        display: flex;
+    }
     .custom-checkbox {
         background-color: #f9f9f9;
         border-radius: 12px;
