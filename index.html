@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="profile.css"> <!-- Lien vers le fichier CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/gif" href="image/instagram.png">
 <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Italiana&family=Just+Another+Hand&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        
+        <img src="image/header-icone-logo-insta-1.png" class="logo" alt="logo">
+        <img src="image/header-icone-logo-insta-white-1.png" alt="logo blanc" class="logoWhite">
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
                 <div class="topnav">
                     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                     <a class="display" href="javascript:void(0);" onclick="myFunction()">
@@ -23,16 +29,16 @@
                         <a href="#">Reels</a>
                         <a href="#">Messages</a>
                         <a href="#">Notifications</a>
-                        <a href="#">Profil</a>
+                        <a href="/index2.html">Profil</a>
                     </div></div>
-        <img src="image/header-icone-logo-insta-1.png" class="logo" alt="logo">
-        <img src="image/header-icone-logo-insta-white-1.png" alt="logo blanc" class="logoWhite">
-        <a href="#">Accueil</a>
+        <div class="none">
+            <a href="#">Accueil</a>
         <a href="#">Découvrir</a>
         <a href="#">Reels</a>
         <a href="#">Messages</a>
         <a href="#">Notifications</a>
-        <a href="#">Profil</a>
+        <a href="/index2.html">Profil</a>
+        </div>
         <div class="search-bar">
             <i class="fas fa-search"></i>
             <input type="text"  />
@@ -48,14 +54,20 @@
                 <h2>Pour vous - </h2>
                 <strong>Suivi(e)</strong>
             </div>
-            <div class="img">
-                <img src="image/stories-icone-1.png" alt="actu-icone">
-                <img src="image/stories-icone-2.png" alt="actu-icone">
-                <img src="image/stories-icone-3.png" alt="actu-icone">
-                <img src="image/stories-icone-4.png" alt="actu-icone">
-                <img src="image/stories-icone-5.png" alt="actu-icone">
-                <img src="image/stories-icone-6.png" alt="actu-icone">
-                <img src="image/stories-icone-7.png" alt="actu-icone">
+            <div class="carrousel-container">
+                <button class="prev" onclick="changeImage(-1)">&#10094</button>
+                
+                <div class="carrousel img">
+                    <img src="image/stories-icone-1.png" alt="actu-icone">
+                    <img src="image/stories-icone-2.png" alt="actu-icone">
+                    <img src="image/stories-icone-3.png" alt="actu-icone">
+                    <img src="image/stories-icone-4.png" alt="actu-icone">
+                    <img src="image/stories-icone-5.png" alt="actu-icone">
+                    <img src="image/stories-icone-6.png" alt="actu-icone">
+                    <img src="image/stories-icone-7.png" alt="actu-icone">
+                    
+                </div>
+                <button class="next" onclick="changeImage(1)">&#10095</button>
             </div>
 
         </div>

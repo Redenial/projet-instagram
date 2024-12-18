@@ -1,3 +1,14 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
 body {
     background-color: #f9f9f9;
     font-family: "Roboto", sans-serif;
@@ -26,12 +37,17 @@ header a {
 .logoWhite{
     display: none;
 }
+.dark{
+    background-color: #000;
+    color: #f9f9f9;
+}
 
 .search{
     background-color:#DBE5EE;
     border-radius: 50%;
     padding: 15px 15px;
 }
+
 .parent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -51,6 +67,10 @@ header a {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
+}
+.parent2 div div {
+    display: flex;
+    align-items: center;
 }
 .stories .h2 {
     display: flex;
@@ -145,22 +165,48 @@ header a {
         cursor: pointer;
         z-index: -1;
     }
+    .prev, .next{
+        display: none;
+    }
     
 
 @media screen and (max-width: 950px) {
-    #mylinks{
-        display: none;
+    .prev, .next{
+        display: block;
+        border-radius: 12px;
+        width: 35px;
+        z-index: 2;
+    }
+    .carrousel-container{
+        display: flex;
+    }
+    .custom-checkbox {
+        background-color: #f9f9f9;
+        border-radius: 12px;
+        min-width: 36px;
+        margin-left: 3vw;
     }
     .topnav{
         display: block;
+        margin-left: 20vw;
     }
+    #myLinks {
+        display: none;
+    }
+    header a {
+        color: #f9f9f9;
+    }
+
     .display{
         display: block;
     }
+    .display img{
+        min-width: 50px;
+    }
     .search-bar {
         position: relative;
-        top: 12vh;
-        left: -20vw;
+        top: 20vh;
+        left: -70vw;
     }
     .search-bar input {
         width: 120px;
@@ -168,9 +214,10 @@ header a {
     }
     header button{
         position: relative;
-        top: 12vh;
-        left: 7vw;
+        top: 20vh;
+        left: -40vw;
         background-color: #f9f9f9;
+        min-width: 90px;
     }
     #mongol{
         height: 50vh;
@@ -183,9 +230,10 @@ header a {
     .parent{
         display: flex;
         flex-direction: column;
+        margin-top: 20vh;
     
     }
-    header a {
+    .none {
         display: none;
     }
     header {    
@@ -201,11 +249,8 @@ header a {
     }
     .parent2{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
 
-    }
-    .parent{
-        margin-top: 12vh;
     }
     }
 
@@ -216,7 +261,52 @@ header a {
         }
     } 
 
+    .custom-checkbox {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        
+    }
 
+    .custom-checkbox input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #f9f9f9;
+        transition: .4s;
+        border-radius: 20px;
+        border: solid 3px #000;
+        cursor: pointer;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+        background-color: #000;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider {
+        background-color: #f9f9f9;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(20px);
+    }
 
 
 
