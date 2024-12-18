@@ -167,6 +167,12 @@ header a {
     
 
 @media screen and (max-width: 950px) {
+    .custom-checkbox {
+        background-color: #f9f9f9;
+        border-radius: 12px;
+        min-width: 36px;
+        margin-left: 3vw;
+    }
     .topnav{
         display: block;
         margin-left: 20vw;
@@ -187,7 +193,7 @@ header a {
     .search-bar {
         position: relative;
         top: 20vh;
-        left: -50vw;
+        left: -70vw;
     }
     .search-bar input {
         width: 120px;
@@ -196,7 +202,7 @@ header a {
     header button{
         position: relative;
         top: 20vh;
-        left: -20vw;
+        left: -40vw;
         background-color: #f9f9f9;
         min-width: 90px;
     }
@@ -247,6 +253,7 @@ header a {
         display: inline-block;
         width: 40px;
         height: 20px;
+        
     }
 
     .custom-checkbox input {
@@ -261,9 +268,10 @@ header a {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #ddd;
+        background-color: #f9f9f9;
         transition: .4s;
         border-radius: 20px;
+        border: solid 3px #000;
         cursor: pointer;
     }
 
