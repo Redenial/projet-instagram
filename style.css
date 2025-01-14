@@ -210,11 +210,15 @@ header a {
     .display img{
         min-width: 50px;
     }
+    header{
+        z-index: 2;
+    }
     .search-bar {
         position: relative;
         top: 20vh;
         left: -70vw;
-        transform: translate(-5vw,0);
+        transform: translate(-5vw,-10vh);
+        z-index: -5;
     }
     .search-bar input {
         width: 200px;
@@ -224,9 +228,10 @@ header a {
         position: relative;
         top: 20vh;
         left: -40vw;
-        transform: translate(5vw,0);
+        transform: translate(5vw,-10vh);
         background-color: #f9f9f9;
         min-width: 90px;
+        z-index: -5;
     }
     #mongol{
         height: 50vh;
